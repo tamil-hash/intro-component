@@ -1,0 +1,117 @@
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  background: hsl(0, 100%, 74%) url('images/bg-intro-mobile.png');
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  color: #FFF;
+  text-align: center;
+}
+.left{
+  margin:10% 5%;
+}
+.left h1{
+  margin-bottom: 20px;
+}
+
+.right{
+  display: flex;
+  flex-direction: column;
+  margin: 0 5% 10%;
+}
+.right button{
+  background: hsl(248, 32%, 49%);
+  border: none;
+  outline:none;
+  cursor: pointer;
+  padding:20px;
+  border-radius: 5px;
+  color: #FFF;
+  margin-bottom: 20px;
+}
+.form{
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFF;
+  padding: 20px;
+  border-radius: 5px;
+}
+.form input[type='text'],input[type='password']{
+  padding: 10px;
+  border-radius: 3px;
+  border: 1px solid hsl(246, 25%, 77%);
+  outline:none;
+  width:100%;
+}
+.form button{
+  background-color: hsl(154, 59%, 51%);
+  margin:0;
+  padding:10px;
+  text-transform: uppercase;
+}
+.form, button{
+  box-shadow: 0px 5px hsl(249, 10%, 26%, 0.3);
+}
+.form p{
+  color:hsl(246, 25%, 77%);
+  margin: 15px 0;
+  font-size: 12px;
+}
+.form a{
+  color: hsl(0, 100%, 74%);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.input{
+  margin-bottom: 20px;
+  position: relative;
+}
+.input img{
+  position: absolute;
+  right: 5px;
+  top: 8px;
+}
+.input p{
+  margin:0;
+  position: absolute;
+  top: 40px;
+  right: 0px;
+}
+
+.error{
+  opacity:0;
+}
+
+@media(min-width:850px){
+  body{
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    text-align: left;
+  }
+  .left{
+    width:50%;
+    margin: auto 10% auto 10%;
+  }
+  .right{
+    width: 50%;
+    margin: auto 10% auto auto;
+    text-align: center;
+  }
+
+  .right button{
+    padding: 10px;
+
+  }
+  .form button, .input{
+    margin:20px;
+  }
+}
